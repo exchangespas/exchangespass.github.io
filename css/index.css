@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #222831;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bwd_text_header {
+    color: #fff;
+    text-align: center;
+    width: 70%;
+    margin: 100px auto;
+    line-height: 1.5;
+    padding-top: 10px;
+}
+
+.bwd_text_header p {
+    font-weight: 300;
+    color: #bbb;
+}
+
+.section {
+    background: white;
+    border-radius: 10px;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+    padding: 30px;
+}
+
+.div-cont a {
+    text-decoration: none;
+    font-weight: 300;
+    color: #222831;
+}
+
+.div-cont {
+    margin: 15px;
+    cursor: pointer;
+    /* border: 2px solid #dfe0df; */
+    border-radius: 15px;
+    position: relative;
+    padding: 5% 8%;
+    box-shadow: inset 5px 5px 10px rgba(13, 39, 80, .16), inset -5px -5px 10px #ffffff;
+}
+
+.div-cont img {
+    width: 10%;
+    border-radius: 100%;
+    position: absolute;
+    top: 22.5%;
+    right: 10%;
+}
+
+.div-cont:hover {
+    background: rgba(128, 128, 128, 0.329);
+    box-shadow: inset 5px 5px 10px rgba(13, 39, 80, .16), inset -5px -5px 10px #ffffff;
+}
+
+/* bwd_modal_content */
+
+#bwd_modal_content {
+    height: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.modal-body samp {
+    color: #bbb;
+    font-weight: 300;
+    font-size: small;
+}
+
+.modal-body label {
+    font-weight: 300;
+    font-size: medium;
+    color: #222831;
+}
+
+.modal-body hr {
+    color: #222831;
+    border: 2px solid #222831;
+}

